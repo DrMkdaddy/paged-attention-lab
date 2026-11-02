@@ -1,0 +1,64 @@
+{
+  "block_size": 16,
+  "dim": 64,
+  "admission": {
+    "budget_blocks": 4096,
+    "block_size": 16,
+    "lengths": [
+      1797,
+      1736,
+      1648,
+      1717,
+      185,
+      1631,
+      1886,
+      559
+    ],
+    "paged_sequences_admitted": 54,
+    "contiguous_sequences_admitted": 32,
+    "paged_blocks_used": 4012,
+    "contiguous_blocks_used": 4000,
+    "paged_tokens_served": 63782,
+    "ratio": 1.69
+  },
+  "waste": [
+    {
+      "sequences": 4,
+      "paged_slots": 5552,
+      "contiguous_slots": 7264,
+      "saving_pct": 23.6
+    },
+    {
+      "sequences": 16,
+      "paged_slots": 12832,
+      "contiguous_slots": 30704,
+      "saving_pct": 58.2
+    },
+    {
+      "sequences": 64,
+      "paged_slots": 70944,
+      "contiguous_slots": 123968,
+      "saving_pct": 42.8
+    }
+  ],
+  "read_overhead": [
+    {
+      "tokens": 64,
+      "contiguous_ms": 0.03,
+      "paged_ms": 0.163,
+      "overhead_x": 5.51
+    },
+    {
+      "tokens": 256,
+      "contiguous_ms": 0.041,
+      "paged_ms": 0.612,
+      "overhead_x": 14.78
+    },
+    {
+      "tokens": 1024,
+      "contiguous_ms": 0.096,
+      "paged_ms": 2.462,
+      "overhead_x": 25.75
+    }
+  ]
+}
